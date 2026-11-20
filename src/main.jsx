@@ -4,10 +4,10 @@ import { House, MapPin, Users, BedDouble, Bath, CarFront, Wifi, Waves, Utensils,
 import './styles.css';
 
 const photos = [
-  {src:'/images/pool.jpg', title:'Um mergulho sem pressa', tag:'Piscina e jardim',alt:'Piscina de uma casa de temporada com jardim tropical'},
-  {src:'/images/bedroom.jpg',title:'Espaço para descansar',tag:'Quartos aconchegantes',alt:'Quarto iluminado com cama e roupa de cama clara'},
-  {src:'/images/living.jpg',title:'Para se sentir em casa',tag:'Sala de estar',alt:'Sala de estar clara com sofá e decoração acolhedora'},
-  {src:'/images/kitchen.jpg',title:'À mesa, juntos',tag:'Cozinha equipada',alt:'Cozinha equipada e iluminada'},
+  {src:import.meta.env.BASE_URL+'images/pool.jpg', title:'Um mergulho sem pressa', tag:'Piscina e jardim',alt:'Piscina de uma casa de temporada com jardim tropical'},
+  {src:import.meta.env.BASE_URL+'images/bedroom.jpg',title:'Espaço para descansar',tag:'Quartos aconchegantes',alt:'Quarto iluminado com cama e roupa de cama clara'},
+  {src:import.meta.env.BASE_URL+'images/living.jpg',title:'Para se sentir em casa',tag:'Sala de estar',alt:'Sala de estar clara com sofá e decoração acolhedora'},
+  {src:import.meta.env.BASE_URL+'images/kitchen.jpg',title:'À mesa, juntos',tag:'Cozinha equipada',alt:'Cozinha equipada e iluminada'},
 ];
 const faq = [
  ['Reservas e valores','Como faço para reservar?','Escolha as datas no calendário e consulte a anfitriã. A reserva só é confirmada após a combinação dos detalhes e do pagamento. Nesta demonstração, nenhum pedido é enviado.'],
@@ -68,4 +68,5 @@ function App(){
  </>;
 }
 createRoot(document.getElementById('root')).render(<App/>);
+
 
